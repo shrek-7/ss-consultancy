@@ -1,0 +1,53 @@
+.button {
+  border: none;
+  color: #e20074;
+  text-transform: uppercase;
+  font-family: Tele-Grotesk-Fett;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #ffffff, #d9d9d9);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  border: solid 1px #d9d9d9;
+  vertical-align: middle;
+}
+.button:focus {
+  outline: 0;
+}
+.submit.button {
+  color: #fff;
+  background-image: linear-gradient(to bottom, #f300ac, #e20074);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  margin-left: 15px;
+}
+.flat.button {
+  background: #ed008c;
+  color:#fff;
+  font-family: TitilliumWeb-Bold;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0;
+  min-height: 34px;
+  padding: 0 25px;
+  width: auto;
+  height: auto;
+}
+.rounded.button {
+  width: 180px;
+  height: 56px;
+  border-radius: 100px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  font-family: Tele-Grotesk-Ultr;
+  font-size: 18px;
+  color: #ffffff;
+}
+.rounded.button>img {
+  max-height: 25px;
+}

@@ -1,0 +1,51 @@
+.checkbox__label {
+  font-family: TitilliumWeb;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  width: 180px;
+}
+.checkbox__label input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  border: 1px solid #9b9b9b;
+}
+.app-profile__heading-holder>.checkbox__label .checkmark {
+  margin-top: 8px;
+}
+.checkbox__label input:checked ~ .checkmark {
+  background-color: #e20074;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox__label input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox__label .checkmark:after {
+
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,36 @@
+.bread-crumbs{
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 40px;
+	padding-top:54px;
+}
+.bread-crumbs__list{
+	list-style-type: none;
+	position: relative;
+}
+
+.bread-crumbs__list:after{
+	content: '/';
+  padding: 3px;
+	color: #666;
+	height: 20px;
+}
+
+.bread-crumbs__list:last-child:after{
+	display: none;
+}
+
+.bread-crumbs__list a{
+	opacity: 0.9;
+	font-family: 'TitilliumWeb';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.bread-crumbs__list:first-child a{
+	color: #d80061;
+}
+.bread-crumbs__link--disabled{
+	pointer-events: none;
+}

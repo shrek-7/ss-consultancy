@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efefef;
+  padding: 20px;
+  padding-top: 80px;
+}
+.footer>div {
+  margin: 25px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.footer__logo-holder {
+  justify-content: space-around;
+  align-items: center;
+}
+div.footer__logo-holder>img {
+  height: 19px;
+}
+.footer__links>span {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #ed0295;
+  margin: 0 15px;
+}
+.footer__copyright {
+  font-family: Lato;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+}

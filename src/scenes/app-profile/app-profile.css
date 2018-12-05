@@ -1,0 +1,38 @@
+.list-container {
+ padding: 100px;
+}
+.list-container li {
+ list-style: none;
+ /* border-bottom: 1px solid lightgrey; */
+ margin-bottom: 10px;
+ border: 1px solid lightgray;
+ padding: 5px;
+ border-radius: 5px;
+
+}
+.list-element:hover {
+ background: lightgray;
+}
+.list-container h1 {
+ margin-bottom: 50px;
+ margin-left: 10px;
+}
+
+.college-list {
+ transition: all 0.7s ease;
+ opacity: 1;
+ position: relative;
+ top: 0px
+}
+
+.hide {
+ top: 50px;
+ opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+ .list-container{
+  padding:60px
+ }
+
+}

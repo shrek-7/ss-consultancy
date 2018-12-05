@@ -1,0 +1,75 @@
+.grid-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 5%;
+}
+.grid-tile.clickable {
+  cursor: pointer;
+  transition: box-shadow 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.grid-tile >img {
+  margin-bottom: 22px;
+  height: 108px;
+  transition: all 1s ease;
+}
+.grid-tile__heading {
+  font-family: TitilliumWeb;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #555555;
+  text-transform: capitalize;
+  transition: all 1s ease;
+}
+.grid-tile__body {
+  font-family: TitilliumWeb;
+  font-size: 18px;
+  text-align: center;
+  color: #555555;
+  text-transform: capitalize;
+  min-height: 70px;
+}
+.grid-tile__button {
+  cursor: pointer;
+  height: 40px;
+  margin: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tele-Grotesk-Fett;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #f1e8ed;
+}
+
+/*  hover properties*/
+
+.grid-tile.clickable:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.grid-tile.clickable:hover .grid-tile__heading {
+  color:#f01f86;
+}
+
+@media only screen and (max-width: 800px) {
+ .grid-tile>img {
+  height: 60px;
+ }
+
+ .grid-tile__heading {
+  font-size: 20px;
+ }
+
+}
+
+@media only screen and (max-width: 800px) {
+ .grid-tile__heading {
+  font-size: 16px;
+ }
+}
+
+
