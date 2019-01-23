@@ -62,6 +62,7 @@ export default class Contact extends Component {
 
  handleSubmit = () => {
    if(this.validateForm()){
+     console.log(this.state);
     firestore.saveData(this.state);
     this.setState({
      isRegistered: true
