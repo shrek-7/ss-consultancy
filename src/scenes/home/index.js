@@ -234,8 +234,6 @@ export default class Homepage extends Component {
           open={this.state.formOpen}
           aria-labelledby="form-dialog-title"
           onClose={this.handleClose}
-          TransitionComponent='Fade'
-          transitionDuration={3000}
         >
           <DialogTitle id="form-dialog-title">Register</DialogTitle>
           <DialogContent>
